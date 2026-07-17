@@ -308,7 +308,7 @@
             <span class="font-medium text-slate-500 dark:text-slate-400" id="progress-percent-text">0% Complete</span>
             <span class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
-              <span id="progress-backers-text" class="hidden">0 donors backed</span>
+              <span id="progress-backers-text">0 donors backed</span>
             </span>
           </div>
         </div>
@@ -556,7 +556,7 @@
         </div>
       </div>
     </section>
-    <section class="hidden max-w-4xl mx-auto px-4 sm:px-6 pb-20">
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 pb-20">
       <div class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl dark:shadow-none relative overflow-hidden border border-slate-200/60 dark:border-slate-800/60 transition-all duration-300">
         <!-- Accent glow inside light and dark modes -->
         <div class="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/5 dark:bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -755,14 +755,62 @@
     // ----------------------------------------------------
     // INLINE FALLBACK DATASET WITH REAL TIMESTAMPS
     // ----------------------------------------------------
-    const MOCK_DB_LAST_UPDATED = new Date("2026-07-16T23:52:00Z").getTime();
+    const MOCK_DB_LAST_UPDATED = new Date("2026-07-17T18:32:00Z").getTime();
     
     const DONOR_DB = [
-      { 
+      {
+        name: "Angelika Seaman",
+        amount: 15,
+        message: "better get to drinking that milk 🥛🥛",
+        timestamp: new Date("2026-07-17T17:21:00Z").getTime()
+      },
+      {
+        name: "Shreya Kumar",
+        amount: 50,
+        message: "",
+        timestamp: new Date("2026-07-17T17:50:00Z").getTime()
+      },
+      {
+        name: "Felix Joseph",
+        amount: 25,
+        message: "Let’s go Manoaj!! Love the cause that you’re running for. Kids deserve the best Hospital Experience.",
+        timestamp: new Date("2026-07-17T17:51:00Z").getTime()
+      },
+      {
+        name: "Kanishk Chinna",
+        amount: 5,
+        message: "",
+        timestamp: new Date("2026-07-17T17:52:00Z").getTime()
+      },
+      {
+        name: "Simran Gidwani",
+        amount: 25,
+        message: "Yayy so proud of you friend!! you are gonna kill it!",
+        timestamp: new Date("2026-07-17T17:59:00Z").getTime()
+      },
+      {
+        name: "Geneve Lau",
+        amount: 25,
+        message: "FIND THE CAFE PANNA ALTERNATIVE IN CHICAGO",
+        timestamp: new Date("2026-07-17T18:09:00Z").getTime()
+      },
+      {
+        name: "Ashwin Murali",
+        amount: 10,
+        message: "",
+        timestamp: new Date("2026-07-17T18:19:00Z").getTime()
+      },
+      {
+        name: "Nishil Shah",
+        amount: 35,
+        message: "",
+        timestamp: new Date("2026-07-17T18:25:00Z").getTime()
+      },
+      {
         name: "Valli Karuppiah (via SRA)",
         amount: 500,
-        message: "", 
-        timestamp: new Date("2026-03-27T16:01:00Z").getTime()
+        // timestamp: new Date("2026-03-27T16:01:00Z").getTime(),
+        message: ""
       }
     ];
 
@@ -946,14 +994,14 @@
         donationCard.className = "flex items-start justify-between gap-4 py-4 border-b border-slate-100 dark:border-slate-800 last:border-0 transition-colors duration-200";
         
         const initials = donation.name === "Anonymous" ? "?" : donation.name.split(" ").map(n => n[0]).join("").substring(0, 2).toUpperCase();
-        const calculatedRelativeTime = getRelativeTimeString(donation.timestamp);
+        const calculatedRelativeTime = donation.timestamp ? getRelativeTimeString(donation.timestamp) : '';
 
         donationCard.innerHTML = `
           <div class="flex items-start gap-3.5">
             <span class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700/60 flex items-center justify-center text-xs font-bold text-slate-600 dark:text-slate-300 shrink-0 select-none transition-colors">
               ${initials}
             </span>
-            <div class="space-y-1">
+            <div class="space-y-1 self-center">
               <h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 transition-colors">${escapeHTML(donation.name)}</h4>
               ${donation.message ? `<p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed italic pr-4 transition-colors">"${escapeHTML(donation.message)}"</p>` : ''}
               <span class="text-[10px] font-semibold text-slate-400 dark:text-slate-500 block uppercase tracking-wider">${calculatedRelativeTime}</span>
