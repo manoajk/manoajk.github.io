@@ -35,12 +35,17 @@
       }
     }
   </script>
+
+  <!-- Google Font with font-display swapping for improved FCP metrics -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
   <style>
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
     }
     .modal-open {
       overflow: hidden;
@@ -59,6 +64,8 @@
       background: rgb(51 65 85);
     }
   </style>
+
+  <!-- ⚡ PRE-FLIGHT THEME PREVENT-FLASH GUARD (CRITICAL FOR LIGHTHOUSE 100) -->
   <script>
     (function() {
       const stored = localStorage.getItem('manoaj_theme') || 'system';
@@ -71,7 +78,7 @@
     })();
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200 min-h-screen flex flex-col antialiased selection:bg-emerald-100 dark:selection:bg-emerald-950/50 selection:text-emerald-900 dark:selection:text-emerald-300 transition-colors duration-200 overflow-x-clip">
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200 min-h-screen flex flex-col antialiased selection:bg-emerald-100 dark:selection:bg-emerald-950/50 selection:text-emerald-900 dark:selection:text-emerald-300 transition-colors duration-200 overflow-x-clip w-full">
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-600 text-white px-4 py-2 rounded-lg font-semibold shadow-lg z-50">
     Skip to main content
   </a>
@@ -135,7 +142,7 @@
       </div>
     </div>
   </header>
-  <main id="main-content" class="flex-grow">
+  <main id="main-content" class="flex-grow max-w-full overflow-x-hidden">
     <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-10 md:pt-14 pb-6">
       <div class="bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-slate-900 dark:text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 dark:border-slate-800 relative overflow-hidden transition-all duration-300">
         <div class="absolute -top-24 -left-24 w-48 h-48 bg-emerald-500/5 dark:bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -150,7 +157,7 @@
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
               Pushing Limits in <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400">Two Historic Cities</span>
             </h1>
-			<p><b class="text-[larger]">I am running the marathon for the first time ever!</b></p>
+            <p><b class="text-lg text-slate-800 dark:text-slate-200">I am running the marathon for the first time ever!</b></p>
             <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
               This year, I am committing to running both the prestigious 
               <a href="https://www.chicagomarathon.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 dark:hover:text-emerald-300 underline font-semibold transition-colors">Bank of America Chicago Marathon</a> 
@@ -179,19 +186,19 @@
             </div>
             <div class="grid grid-cols-4 gap-2.5 text-center" id="countdown-container">
               <div class="bg-slate-100 dark:bg-slate-900 p-2.5 rounded-xl border border-slate-200 dark:border-slate-800/80">
-                <span id="countdown-days" class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white block animate-transition">00</span>
+                <span id="countdown-days" class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white block">00</span>
                 <span class="text-[9px] text-slate-500 dark:text-slate-400 uppercase font-medium">Days</span>
               </div>
               <div class="bg-slate-100 dark:bg-slate-900 p-2.5 rounded-xl border border-slate-200 dark:border-slate-800/80">
-                <span id="countdown-hours" class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white block animate-transition">00</span>
+                <span id="countdown-hours" class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white block">00</span>
                 <span class="text-[9px] text-slate-500 dark:text-slate-400 uppercase font-medium">Hours</span>
               </div>
               <div class="bg-slate-100 dark:bg-slate-900 p-2.5 rounded-xl border border-slate-200 dark:border-slate-800/80">
-                <span id="countdown-mins" class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white block animate-transition">00</span>
+                <span id="countdown-mins" class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white block">00</span>
                 <span class="text-[9px] text-slate-500 dark:text-slate-400 uppercase font-medium">Mins</span>
               </div>
               <div class="bg-slate-100 dark:bg-slate-900 p-2.5 rounded-xl border border-slate-200 dark:border-slate-800/80">
-                <span id="countdown-secs" class="text-xl sm:text-2xl font-extrabold text-emerald-600 dark:text-emerald-400 block animate-transition">00</span>
+                <span id="countdown-secs" class="text-xl sm:text-2xl font-extrabold text-emerald-600 dark:text-emerald-400 block">00</span>
                 <span class="text-[9px] text-slate-500 dark:text-slate-400 uppercase font-medium">Secs</span>
               </div>
             </div>
@@ -232,9 +239,8 @@
               >
                 <div 
                   id="runner-indicator" 
-                  class="absolute -right-3.5 -top-5.5 transition-all duration-1000 ease-out transform"
+                  class="absolute -right-3.5 -top-5 transition-all duration-1000 ease-out transform"
                 >
-                  <!-- Premium Custom Animated running athlete vector silhouette -->
                   <svg class="w-8 h-8 text-emerald-600 dark:text-emerald-400 drop-shadow-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <style>
                       @keyframes run-body {
@@ -321,8 +327,8 @@
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-3xl border border-slate-200/50 dark:border-slate-800/50 shadow-sm transition-all duration-300">
         <div class="w-full md:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 relative shrink-0 shadow-inner">
           <img 
-            src="UnitedPhoto.jpeg" 
-            alt="Manoaj at the 2025 United NYC Half" 
+            src="https://dgtzuqphqg23d.cloudfront.net/qs50logi2hBO7LTy07kV3o-FI96dmzK6zCC_oIdJSxM-1536x2048.jpg"
+            alt="Manoaj at the 2024 HiTops Princeton Half Marathon"
             class="object-cover w-full h-full"
             loading="lazy"
           >
@@ -339,7 +345,7 @@
       <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-3xl border border-slate-200/50 dark:border-slate-800/50 shadow-sm transition-all duration-300">
         <div class="w-full md:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 relative shrink-0 shadow-inner">
           <img 
-            src="https://s3.amazonaws.com/hakuapps/prod/e9a511cc3ee75d428a1c48a0cb8e46da8ebe3aeb.JPG?1770162601" 
+            src="https://s3.amazonaws.com/hakuapps/prod/e9a511cc3ee75d428a1c48a0cb8e46da8ebe3aeb.JPG?1770162601"
             alt="Throwback photo of Manoaj doing cross country" 
             class="object-cover w-full h-full"
             loading="lazy"
@@ -350,8 +356,33 @@
             Make It Fun & Interactive
           </h2>
           <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm sm:text-base">
-            I would love for your support in any way possible. So many of you have cheered me on and helped me get to where I am right now. I have added some instructions in the "Donate Now" section, and I would love for this process to be as fun and involved as possible. I am open to the possibility of some challenges/recognition as a part of this process (you can get creative), such as running X miles in honor of you (or a person/organization/cause that is important to you) or maybe even trying to get me to eat as many cookies as possible in one sitting. Whether it's your ability to contribute financially, words of encouragement, or anything else to keep me going, I would love to make you all proud and to support thousands of kids in hospitals through Open Heart Magic.
+            So many of you have cheered me on and helped me get to where I am right now. I would love for this process to be fun and involved, and I'm open to the possibility of creative challenges/recognition as a part of this process, such as running X miles in honor of you (or a cause important to you) or maybe even trying to get me to eat as many cookies as possible in one sitting. Whether it's your ability to contribute financially, words of encouragement, or anything else to keep me going, I'm grateful for you every step of the way.
           </p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-3xl border border-slate-200/50 dark:border-slate-800/50 shadow-sm transition-all duration-300">
+        <div class="w-full md:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 relative shrink-0 shadow-inner">
+          <img
+            src="https://dgtzuqphqg23d.cloudfront.net/3wxNccXBWLkTHnhBB2RS03xhUl46PteK6IqFgW8HOWM-1536x2048.jpg"
+            alt="Manoaj at the 2025 United NYC Half with friends"
+            class="object-cover w-full h-full"
+            loading="lazy"
+          >
+        </div>
+        <div class="flex-1 space-y-4">
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            Best Times
+          </h2>
+          <div class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm sm:text-base">
+            My best times are as follows:
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li>Running with friends</li>
+              <li>Setting an ambitious goal and working towards it</li>
+              <li>Seeing and helping everyone succeed</li>
+              <li>When there is a food/dessert incentive awaiting me</li>
+            </ul>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm sm:text-base pt-2">I've recorded some performances that I'm proud of, and here's to continuing to push myself to new heights.</p>
         </div>
       </div>
     </section>
@@ -527,6 +558,7 @@
     </section>
     <section class="hidden max-w-4xl mx-auto px-4 sm:px-6 pb-20">
       <div class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl dark:shadow-none relative overflow-hidden border border-slate-200/60 dark:border-slate-800/60 transition-all duration-300">
+        <!-- Accent glow inside light and dark modes -->
         <div class="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/5 dark:bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>
@@ -624,7 +656,7 @@
           </svg>
           <span>NYRR Results</span>
         </a>
-		<a 
+        <a 
           href="https://nj.milesplit.com/athletes/2231865-manoaj-kandiakounder" 
           target="_blank" 
           rel="noopener noreferrer" 
@@ -639,6 +671,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- 7. DRAWER / DIALOG -->
   <div 
     id="donation-modal" 
     class="fixed inset-0 z-50 invisible flex items-center justify-center p-4"
@@ -649,7 +683,7 @@
     <div 
       id="modal-backdrop"
       onclick="closeDonationModal()"
-      class="absolute inset-0 bg-slate-950/40 dark:bg-slate-950/60 backdrop-blur-sm opacity-0 transition-opacity duration-50 ease-out"
+      class="absolute inset-0 bg-slate-950/40 dark:bg-slate-950/60 backdrop-blur-sm opacity-0 transition-opacity duration-150 ease-out"
     ></div>
     <div 
       id="modal-card"
@@ -679,8 +713,8 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <div class="text-xs text-slate-600 dark:text-slate-300 leading-normal">
-            <strong class="text-slate-900 dark:text-white font-bold block mb-0.5">Double Your Impact!</strong>
-            I would love for your contribution to stretch as far as possible. Please look into options such as company donation matching policies—many employers offer a 1:1 match or even more generous programs! (if any of this confuses you, PLEASE reach out to me, more than happy to assist)
+            <strong class="text-slate-900 dark:text-white font-bold block mb-0.5">Double Your Impact With An Employer Match!</strong>
+            Many employers offer a 1:1 donation match or even more generous programs! (if any of this confuses you, PLEASE reach out to me, I'm more than happy to assist)
           </div>
         </div>
         <div class="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800/80 p-4 rounded-2xl flex items-start gap-3">
@@ -710,6 +744,8 @@
       </div>
     </div>
   </div>
+
+  <!-- 8. CORE APPLICATION SCRIPT -->
   <script>
     // ----------------------------------------------------
     // ⚙️ GLOBAL APPLICATION CONFIGURATION (EASY TO CHANGE)
@@ -760,7 +796,7 @@
       }
     }
     
-	function getFormattedLocalTime(timestamp) {
+    function getFormattedLocalTime(timestamp) {
       const date = new Date(timestamp);
       return date.toLocaleDateString('en-US', {
         month: 'short',
