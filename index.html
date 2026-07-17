@@ -40,30 +40,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-
-  <style>
-    body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-    }
-    .modal-open {
-      overflow: hidden;
-    }
-    .custom-scrollbar::-webkit-scrollbar {
-      width: 6px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-      background: transparent;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-      background: rgb(203 213 225);
-      border-radius: 3px;
-    }
-    .dark .custom-scrollbar::-webkit-scrollbar-thumb {
-      background: rgb(51 65 85);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 
   <!-- ⚡ PRE-FLIGHT THEME PREVENT-FLASH GUARD (CRITICAL FOR LIGHTHOUSE 100) -->
   <script>
@@ -242,48 +219,6 @@
                   class="absolute -right-3.5 -top-5 transition-all duration-1000 ease-out transform"
                 >
                   <svg class="w-8 h-8 text-emerald-600 dark:text-emerald-400 drop-shadow-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <style>
-                      @keyframes run-body {
-                        0%, 100% { transform: translateY(0) rotate(12deg); }
-                        50% { transform: translateY(-4px) rotate(14deg); }
-                      }
-                      @keyframes arm-front {
-                        0%, 100% { transform: rotate(-35deg); }
-                        50% { transform: rotate(40deg); }
-                      }
-                      @keyframes arm-back {
-                        0%, 100% { transform: rotate(35deg); }
-                        50% { transform: rotate(-40deg); }
-                      }
-                      @keyframes leg-front {
-                        0%, 100% { transform: rotate(-45deg); }
-                        50% { transform: rotate(35deg); }
-                      }
-                      @keyframes leg-back {
-                        0%, 100% { transform: rotate(35deg); }
-                        50% { transform: rotate(-45deg); }
-                      }
-                      .running-torso {
-                        animation: run-body 0.38s infinite ease-in-out;
-                        transform-origin: 12px 12px;
-                      }
-                      .running-arm-front {
-                        transform-origin: 11px 8px;
-                        animation: arm-front 0.38s infinite ease-in-out;
-                      }
-                      .running-arm-back {
-                        transform-origin: 11px 8px;
-                        animation: arm-back 0.38s infinite ease-in-out;
-                      }
-                      .running-leg-front {
-                        transform-origin: 11px 13px;
-                        animation: leg-front 0.38s infinite ease-in-out;
-                      }
-                      .running-leg-back {
-                        transform-origin: 11px 13px;
-                        animation: leg-back 0.38s infinite ease-in-out;
-                      }
-                    </style>
                     <g class="running-torso">
                       <!-- Head -->
                       <circle cx="13.5" cy="4" r="1.5" fill="currentColor"/>
