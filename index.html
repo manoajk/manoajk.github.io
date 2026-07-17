@@ -843,44 +843,14 @@
     // ----------------------------------------------------
     // INLINE FALLBACK DATASET WITH REAL TIMESTAMPS
     // ----------------------------------------------------
-    const MOCK_DB_LAST_UPDATED = new Date("2026-06-15T19:20:00Z").getTime();
+    const MOCK_DB_LAST_UPDATED = new Date("2026-07-16T19:52:00Z").getTime();
     
     const DONOR_DB = [
       { 
-        name: "Sarah Jenkins", 
-        amount: 150, 
-        message: "Go break your record, Manoaj! Rooting for you!", 
-        timestamp: new Date("2026-06-15T17:29:00Z").getTime() // 2 hours ago
-      },
-      { 
-        name: "Dr. Alistair Vance", 
-        amount: 500, 
-        message: "Incredible athletic discipline for an even better civic goal.", 
-        timestamp: new Date("2026-06-15T14:29:00Z").getTime() // 5 hours ago
-      },
-      { 
-        name: "The Perez Family", 
-        amount: 75, 
-        message: "Keep pacing strong!", 
-        timestamp: new Date("2026-06-14T19:29:00Z").getTime() // 1 day ago
-      },
-      { 
-        name: "Marcus Chen", 
-        amount: 100, 
-        message: "Honored to support this effort, run fast!", 
-        timestamp: new Date("2026-06-13T19:29:00Z").getTime() // 2 days ago
-      },
-      { 
-        name: "Anonymous", 
-        amount: 25, 
+        name: "Valli Karuppiah (via SRA)",
+        amount: 500,
         message: "", 
-        timestamp: new Date("2026-06-12T19:29:00Z").getTime() // 3 days ago
-      },
-      { 
-        name: "Nitin Kumar", 
-        amount: 250, 
-        message: "Inspirational work, Manoaj! See you at the finish line.", 
-        timestamp: new Date("2026-06-11T19:29:00Z").getTime() // 4 days ago
+        timestamp: new Date("2026-03-27T16:01:00Z").getTime()
       }
     ];
 
@@ -1032,7 +1002,7 @@
 
     function initDonationMetrics() {
       const totalRaised = DONOR_DB.reduce((acc, curr) => acc + curr.amount, 0);
-      const targetGoal = 5000;
+      const targetGoal = 2500;
       const progressPercent = Math.min((totalRaised / targetGoal) * 100, 100);
       const backerCount = DONOR_DB.length;
 
