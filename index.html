@@ -87,7 +87,7 @@
     })();
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200 min-h-screen flex flex-col antialiased selection:bg-emerald-100 dark:selection:bg-emerald-950/50 selection:text-emerald-900 dark:selection:text-emerald-300 transition-colors duration-200 overflow-x-hidden">
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200 min-h-screen flex flex-col antialiased selection:bg-emerald-100 dark:selection:bg-emerald-950/50 selection:text-emerald-900 dark:selection:text-emerald-300 transition-colors duration-200 overflow-x-clip">
 
   <!-- 1. SKIP TO MAIN CONTENT -->
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-600 text-white px-4 py-2 rounded-lg font-semibold shadow-lg z-50">
@@ -96,18 +96,25 @@
 
   <!-- 2. STICKY GLASS HEADER -->
   <header class="sticky top-0 z-40 w-full border-b border-slate-200/80 dark:border-slate-800/80 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md transition-all">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-      <a href="#" class="flex items-center gap-2.5 group shrink-0" aria-label="Manoaj's Campaign Home">
-        <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white shadow-md shadow-emerald-500/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:py-0 sm:h-16 flex items-center justify-between gap-3 sm:gap-4">
+
+      <!-- Brand Link -->
+      <a href="#" class="flex items-center gap-2 sm:gap-2.5 group shrink min-w-0" aria-label="Manoaj's Campaign Home">
+        <!-- Logo: Sized beautifully for both views -->
+        <span class="w-9 h-9 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white shadow-md shadow-emerald-500/10">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
           </svg>
         </span>
-        <span class="font-extrabold text-slate-950 dark:text-white tracking-tight text-md sm:text-lg group-hover:text-emerald-600 transition-colors">Manoaj's First Marathon(s?)</span>
+
+        <!-- Text: Stays at text-base on mobile, scales to text-lg on desktop -->
+        <span class="font-extrabold text-slate-950 dark:text-white tracking-tight text-base sm:text-lg leading-tight sm:leading-normal group-hover:text-emerald-600 transition-colors">
+          Manoaj's First <br class="sm:hidden" /> Marathon(s?)
+        </span>
       </a>
 
-      <!-- CONTROLLERS CONTAINER -->
-      <div class="flex items-center gap-2.5 sm:gap-4">
+      <!-- CONTROLLERS CONTAINER (Stacks on mobile, row on sm screens) -->
+      <div class="flex flex-col sm:flex-row items-end sm:items-center gap-2 sm:gap-4 shrink-0">
         
         <!-- ✨ ACCESS-APPROVED PREMIUM SEGMENTED THEME CONTROL -->
         <div class="relative flex items-center bg-slate-100 dark:bg-slate-900 p-0.5 sm:p-1 rounded-full w-24 sm:w-28 border border-slate-200/50 dark:border-slate-800" role="radiogroup" aria-label="Theme selection">
@@ -157,7 +164,7 @@
 
         <button 
           onclick="openDonationModal()"
-          class="bg-slate-900 dark:bg-slate-100 dark:text-slate-950 hover:bg-slate-850 dark:hover:bg-slate-200 text-white text-xs sm:text-sm font-semibold px-3 py-2 sm:px-4 sm:py-2 rounded-xl transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-950 dark:focus:ring-offset-slate-900"
+          class="w-24 sm:w-auto bg-slate-900 dark:bg-slate-100 dark:text-slate-950 hover:bg-slate-850 dark:hover:bg-slate-200 text-white text-xs sm:text-sm font-semibold py-1.5 sm:py-2 px-3 sm:px-4 rounded-xl transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-950 dark:focus:ring-offset-slate-900"
         >
           Donate Now
         </button>
