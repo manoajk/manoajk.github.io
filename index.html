@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary Meta Tags -->
-  <title>Manoaj's Dual Marathon Challenge — Chicago & NYC 2026</title>
-  <meta name="title" content="Manoaj's Dual Marathon Challenge — Chicago & NYC 2026">
+  <title>Manoaj's First Marathon(s?)</title>
+  <meta name="title" content="Manoaj's First Marathon(s?)">
   <meta name="description" content="Support Manoaj's fundraising journey as he takes on both the Chicago Marathon and the TCS New York City Marathon in 2026. Track live goals here.">
   <link rel="canonical" href="https://manoajk.com">
-
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://manoajk.com">
-  <meta property="og:title" content="Manoaj's Dual Marathon Challenge — Chicago & NYC 2026">
+  <meta property="og:title" content="Manoaj's First Marathon(s?)">
   <meta property="og:description" content="Support Manoaj's fundraising journey as he takes on both the Chicago Marathon and the TCS New York City Marathon in 2026.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:image" content="https://s3.amazonaws.com/hakuapps/prod/9d1d5ea0c0c47058a46830bae887fe2ced8625a0.jpeg?1770162589">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://manoajk.com">
-  <meta property="twitter:title" content="Manoaj's Dual Marathon Challenge — Chicago & NYC 2026">
+  <meta property="twitter:title" content="Manoaj's First Marathon(s?)">
   <meta property="twitter:description" content="Support Manoaj's fundraising journey as he takes on both the Chicago Marathon and the TCS New York City Marathon in 2026.">
-  <meta property="twitter:image" content="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&h=630&q=80">
-
-  <!-- Tailwind CSS CDN -->
+  <meta property="twitter:image" content="https://s3.amazonaws.com/hakuapps/prod/9d1d5ea0c0c47058a46830bae887fe2ced8625a0.jpeg?1770162589">
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Tailwind Configuration for Custom Theme Tweaks and Dark Class Flag -->
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -45,12 +35,9 @@
       }
     }
   </script>
-
-  <!-- Google Font (Inter) for premium typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
   <style>
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -58,7 +45,6 @@
     .modal-open {
       overflow: hidden;
     }
-    /* Simple custom scrollbar for feed block adapts to light/dark themes */
     .custom-scrollbar::-webkit-scrollbar {
       width: 6px;
     }
@@ -73,8 +59,6 @@
       background: rgb(51 65 85);
     }
   </style>
-
-  <!-- ⚡ PRE-FLIGHT THEME PREVENT-FLASH GUARD (CRITICAL FOR LIGHTHOUSE 100) -->
   <script>
     (function() {
       const stored = localStorage.getItem('manoaj_theme') || 'system';
@@ -87,38 +71,29 @@
     })();
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200 min-h-screen flex flex-col antialiased selection:bg-emerald-100 dark:selection:bg-emerald-950/50 selection:text-emerald-900 dark:selection:text-emerald-300 transition-colors duration-200">
-
-  <!-- 1. SKIP TO MAIN CONTENT -->
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200 min-h-screen flex flex-col antialiased selection:bg-emerald-100 dark:selection:bg-emerald-950/50 selection:text-emerald-900 dark:selection:text-emerald-300 transition-colors duration-200 overflow-x-clip">
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-600 text-white px-4 py-2 rounded-lg font-semibold shadow-lg z-50">
     Skip to main content
   </a>
-
-  <!-- 2. STICKY GLASS HEADER -->
   <header class="sticky top-0 z-40 w-full border-b border-slate-200/80 dark:border-slate-800/80 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md transition-all">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-      <a href="#" class="flex items-center gap-2.5 group shrink-0" aria-label="Manoaj's Campaign Home">
-        <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white shadow-md shadow-emerald-500/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:py-0 sm:h-16 flex items-center justify-between gap-3 sm:gap-4">
+      <a href="#" class="flex items-center gap-2 sm:gap-2.5 group shrink min-w-0" aria-label="Manoaj's Campaign Home">
+        <span class="w-9 h-9 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white shadow-md shadow-emerald-500/10">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
           </svg>
         </span>
-        <span class="font-extrabold text-slate-950 dark:text-white tracking-tight text-md sm:text-lg group-hover:text-emerald-600 transition-colors">Manoaj's First Marathon(s?)</span>
+        <span class="font-extrabold text-slate-950 dark:text-white tracking-tight text-base sm:text-lg leading-tight sm:leading-normal group-hover:text-emerald-600 transition-colors">
+          Manoaj's First <br class="sm:hidden" /> Marathon(s?)
+        </span>
       </a>
-
-      <!-- CONTROLLERS CONTAINER -->
-      <div class="flex items-center gap-2.5 sm:gap-4">
-        
-        <!-- ✨ ACCESS-APPROVED PREMIUM SEGMENTED THEME CONTROL -->
+      <div class="flex flex-col sm:flex-row items-end sm:items-center gap-2 sm:gap-4 shrink-0">
         <div class="relative flex items-center bg-slate-100 dark:bg-slate-900 p-0.5 sm:p-1 rounded-full w-24 sm:w-28 border border-slate-200/50 dark:border-slate-800" role="radiogroup" aria-label="Theme selection">
-          <!-- Active sliding pill background -->
           <div 
             id="theme-pill" 
             class="absolute top-0.5 bottom-0.5 rounded-full bg-white dark:bg-slate-800 shadow-sm transition-all duration-300 ease-out" 
             style="width: calc(33.333% - 2px); left: 2px;"
           ></div>
-          
-          <!-- Light (Sun) Button -->
           <button 
             onclick="setThemeMode('light')" 
             class="relative flex-1 py-1 flex items-center justify-center text-slate-400 hover:text-slate-800 dark:text-slate-500 dark:hover:text-slate-200 focus:outline-none transition-colors z-10" 
@@ -129,8 +104,6 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"/>
             </svg>
           </button>
-          
-          <!-- System (Monitor) Button -->
           <button 
             onclick="setThemeMode('system')" 
             class="relative flex-1 py-1 flex items-center justify-center text-slate-400 hover:text-slate-800 dark:text-slate-500 dark:hover:text-slate-200 focus:outline-none transition-colors z-10" 
@@ -141,8 +114,6 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
           </button>
-          
-          <!-- Dark (Moon) Button -->
           <button 
             onclick="setThemeMode('dark')" 
             class="relative flex-1 py-1 flex items-center justify-center text-slate-400 hover:text-slate-800 dark:text-slate-500 dark:hover:text-slate-200 focus:outline-none transition-colors z-10" 
@@ -157,22 +128,18 @@
 
         <button 
           onclick="openDonationModal()"
-          class="bg-slate-900 dark:bg-slate-100 dark:text-slate-950 hover:bg-slate-850 dark:hover:bg-slate-200 text-white text-xs sm:text-sm font-semibold px-3 py-2 sm:px-4 sm:py-2 rounded-xl transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-950 dark:focus:ring-offset-slate-900"
+          class="w-24 sm:w-auto bg-slate-900 dark:bg-slate-100 dark:text-slate-950 hover:bg-slate-850 dark:hover:bg-slate-200 text-white text-xs sm:text-sm font-semibold py-1.5 sm:py-2 px-3 sm:px-4 rounded-xl transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-950 dark:focus:ring-offset-slate-900"
         >
           Donate Now
         </button>
       </div>
     </div>
   </header>
-
-  <!-- 3. MAIN WORKSPACE CONTENT -->
   <main id="main-content" class="flex-grow">
-    
-    <!-- HERO DUAL CHALLENGE & COUNTDOWN SECTION -->
     <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-10 md:pt-14 pb-6">
       <div class="bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-slate-900 dark:text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 dark:border-slate-800 relative overflow-hidden transition-all duration-300">
         <div class="absolute -top-24 -left-24 w-48 h-48 bg-emerald-500/5 dark:bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-24 -right-24 w-48 h-48 bg-teal-500/5 dark:bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-48 h-48 bg-teal-500/5 dark:teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
           <div class="space-y-4 max-w-xl">
@@ -183,6 +150,7 @@
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
               Pushing Limits in <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400">Two Historic Cities</span>
             </h1>
+			<p><b class="text-[larger]">I am running the marathon for the first time ever!</b></p>
             <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
               This year, I am committing to running both the prestigious 
               <a href="https://www.chicagomarathon.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 dark:hover:text-emerald-300 underline font-semibold transition-colors">Bank of America Chicago Marathon</a> 
@@ -191,11 +159,8 @@
               Help me as I seek to fundraise on behalf of <a href="https://openheartmagic.org/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 dark:text-emerald-400 underline font-semibold transition-colors">Open Heart Magic</a> so that I can transform the hospital experience and help bring laughter, confidence, and hope to kids in hospitals.
             </p>
           </div>
-
-          <!-- Live Chicago Countdown Target Card -->
           <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shrink-0 w-full md:w-80 shadow-lg flex flex-col justify-center transition-all duration-300">
             <div class="flex items-center gap-4 mb-4">
-              <!-- Official Chicago Marathon Branding Logo from CDN -->
               <div class="shrink-0 w-16 h-10 border border-slate-200 dark:border-slate-855 rounded-lg overflow-hidden bg-white flex items-center justify-center p-1" aria-hidden="true">
                 <img 
                   src="https://www.chicagomarathon.com/wp-content/themes/cm/images/logo.svg?v=2" 
@@ -203,7 +168,6 @@
                   class="h-full w-auto object-contain"
                   onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
                 />
-                <!-- CSS Fallback Icon -->
                 <div class="hidden text-red-500 font-black text-xs">CHI</div>
               </div>
               <div class="text-left">
@@ -213,9 +177,7 @@
                 </span>
               </div>
             </div>
-            
             <div class="grid grid-cols-4 gap-2.5 text-center" id="countdown-container">
-              <!-- Render Timer Blocks dynamically to ensure accuracy -->
               <div class="bg-slate-100 dark:bg-slate-900 p-2.5 rounded-xl border border-slate-200 dark:border-slate-800/80">
                 <span id="countdown-days" class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white block animate-transition">00</span>
                 <span class="text-[9px] text-slate-500 dark:text-slate-400 uppercase font-medium">Days</span>
@@ -237,12 +199,8 @@
         </div>
       </div>
     </section>
-
-    <!-- FUNDRAISING PROGRESS CARD SECTION -->
     <section class="max-w-5xl mx-auto px-4 sm:px-6 py-6 text-center flex flex-col items-center">
       <div class="w-full max-w-2xl bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl shadow-xl shadow-slate-100 dark:shadow-none border border-slate-200/60 dark:border-slate-800/60 mb-8 relative transition-all duration-300">
-        
-        <!-- Stats with Skeletal Loading support -->
         <div id="stats-skeleton" class="animate-pulse space-y-4">
           <div class="grid grid-cols-2 gap-4">
             <div class="h-10 bg-slate-200 dark:bg-slate-800 rounded-xl w-3/4"></div>
@@ -254,7 +212,6 @@
             <div class="h-4 bg-slate-200 dark:bg-slate-800 rounded w-1/3"></div>
           </div>
         </div>
-
         <div id="stats-content" class="hidden">
           <div class="grid grid-cols-2 gap-4 mb-4 text-left">
             <div>
@@ -263,20 +220,16 @@
             </div>
             <div class="text-right">
               <span class="text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 block uppercase tracking-wider">Goal Target</span>
-              <span class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">$5,000</span>
+              <span class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">$2,500</span>
             </div>
           </div>
-          
-          <!-- Animated Progress Bar with Customizable Floating Runner Graphic -->
           <div class="w-full relative pt-5 mb-3" aria-label="Fundraising progress bar container">
             <div class="w-full bg-slate-100 dark:bg-slate-800 h-4 rounded-full relative overflow-visible">
-              <!-- Progress fill -->
               <div 
                 id="progress-bar"
                 class="bg-gradient-to-r from-emerald-500 to-teal-500 h-full rounded-full transition-all duration-1000 ease-out relative" 
                 style="width: 0%"
               >
-                <!-- SVG Running Person Indicator sitting exactly on the leading edge (Toggleable via config) -->
                 <div 
                   id="runner-indicator" 
                   class="absolute -right-3.5 -top-5.5 transition-all duration-1000 ease-out transform"
@@ -284,37 +237,60 @@
                   <!-- Premium Custom Animated running athlete vector silhouette -->
                   <svg class="w-8 h-8 text-emerald-600 dark:text-emerald-400 drop-shadow-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <style>
-                      @keyframes run-bounce {
-                        0%, 100% { transform: translateY(0); }
-                        50% { transform: translateY(-3px); }
+                      @keyframes run-body {
+                        0%, 100% { transform: translateY(0) rotate(12deg); }
+                        50% { transform: translateY(-4px) rotate(14deg); }
                       }
-                      @keyframes leg-swing {
-                        0%, 100% { transform: rotate(-12deg); }
-                        50% { transform: rotate(18deg); }
+                      @keyframes arm-front {
+                        0%, 100% { transform: rotate(-35deg); }
+                        50% { transform: rotate(40deg); }
                       }
-                      .bounce-body {
-                        animation: run-bounce 0.45s infinite ease-in-out;
+                      @keyframes arm-back {
+                        0%, 100% { transform: rotate(35deg); }
+                        50% { transform: rotate(-40deg); }
                       }
-                      .leg-one {
-                        transform-origin: 12px 14px;
-                        animation: leg-swing 0.45s infinite ease-in-out;
+                      @keyframes leg-front {
+                        0%, 100% { transform: rotate(-45deg); }
+                        50% { transform: rotate(35deg); }
                       }
-                      .leg-two {
-                        transform-origin: 12px 14px;
-                        animation: leg-swing 0.45s infinite ease-in-out reverse;
+                      @keyframes leg-back {
+                        0%, 100% { transform: rotate(35deg); }
+                        50% { transform: rotate(-45deg); }
+                      }
+                      .running-torso {
+                        animation: run-body 0.38s infinite ease-in-out;
+                        transform-origin: 12px 12px;
+                      }
+                      .running-arm-front {
+                        transform-origin: 11px 8px;
+                        animation: arm-front 0.38s infinite ease-in-out;
+                      }
+                      .running-arm-back {
+                        transform-origin: 11px 8px;
+                        animation: arm-back 0.38s infinite ease-in-out;
+                      }
+                      .running-leg-front {
+                        transform-origin: 11px 13px;
+                        animation: leg-front 0.38s infinite ease-in-out;
+                      }
+                      .running-leg-back {
+                        transform-origin: 11px 13px;
+                        animation: leg-back 0.38s infinite ease-in-out;
                       }
                     </style>
-                    <g class="bounce-body">
+                    <g class="running-torso">
                       <!-- Head -->
-                      <circle cx="12" cy="5" r="1.5" fill="currentColor"/>
-                      <!-- Spine / Torso -->
-                      <line x1="12" y1="6.5" x2="12" y2="13"/>
-                      <!-- Arms in swing -->
-                      <path d="M12 8.5 L15.5 11" />
-                      <path d="M12 8.5 L9.2 11.5" />
-                      <!-- Active legs animation -->
-                      <path class="leg-one" d="M12 13 L14.5 17 L17 19.5" />
-                      <path class="leg-two" d="M12 13 L9.5 16.5 L7.5 18" />
+                      <circle cx="13.5" cy="4" r="1.5" fill="currentColor"/>
+                      <!-- Back Arm -->
+                      <path class="running-arm-back" d="M 11,8 L 7,10.5 L 9.5,13.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                      <!-- Back Leg -->
+                      <path class="running-leg-back" d="M 11,13 L 7,16 L 10.5,19.5" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                      <!-- Torso Spine Line -->
+                      <path d="M 12.5,5.5 L 11,13" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                      <!-- Front Leg -->
+                      <path class="running-leg-front" d="M 11,13 L 15,16.5 L 12,21" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                      <!-- Front Arm -->
+                      <path class="running-arm-front" d="M 11,8 L 14.5,10.5 L 12.5,14" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
                     </g>
                   </svg>
                 </div>
@@ -331,7 +307,6 @@
           </div>
         </div>
       </div>
-
       <button 
         onclick="openDonationModal()"
         class="group w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-10 py-5 rounded-2xl shadow-xl shadow-emerald-600/20 hover:shadow-emerald-600/30 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-3 focus:outline-none focus:ring-4 focus:ring-emerald-600/30"
@@ -342,36 +317,30 @@
         </svg>
       </button>
     </section>
-
-    <!-- 4. NARRATIVE BLOCKS SECTION -->
     <section class="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-12">
-      
-      <!-- Restructured Block 1 -->
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-3xl border border-slate-200/50 dark:border-slate-800/50 shadow-sm transition-all duration-300">
         <div class="w-full md:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 relative shrink-0 shadow-inner">
           <img 
-            src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=600&q=80" 
-            alt="Close up of a runner's shoes and feet on an empty asphalt road at sunrise" 
+            src="UnitedPhoto.jpeg" 
+            alt="Manoaj at the 2025 United NYC Half" 
             class="object-cover w-full h-full"
             loading="lazy"
           >
         </div>
         <div class="flex-1 space-y-4">
           <h2 class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-            Why This Race Matters
+            Why This Matters
           </h2>
           <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm sm:text-base">
-            Special thanks to <a href="https://openheartmagic.org/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">Open Heart Magic</a> for providing me with the opportunity to run the Chicago Marathon this year. I have also secured a bib for the 2026 NYC Marathon by completing the vaunted <a href="https://www.nyrr.org/run/guaranteed-entry/tcs-new-york-city-marathon-9plus1-program" target="_blank" rel="noopener noreferrer" class="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">NYRR 9+1 program</a> in 2025. I am considering this to be one combined training block, and therefore am also considering this to be a fundraising effort to represent my first ever marathon efforts. I am proud to <a href="https://openheartmagic.org/get-involved/join-the-open-heart-magic-charity-team-2/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">run this year on behalf of Open Heart Magic</a>.
+            Special thanks to <a href="https://openheartmagic.org/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">Open Heart Magic</a> for providing me with the opportunity to run my <b>first ever marathon</b>, which will be this year's Chicago Marathon. I have also secured a bib for the 2026 NYC Marathon by completing the vaunted <a href="https://www.nyrr.org/run/guaranteed-entry/tcs-new-york-city-marathon-9plus1-program" target="_blank" rel="noopener noreferrer" class="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">NYRR 9+1 program</a> in 2025. I am considering this to be one combined training block, and therefore am also considering this to be a fundraising effort to represent my first ever marathon efforts. I am proud to <a href="https://openheartmagic.org/get-involved/join-the-open-heart-magic-charity-team-2/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">run this year on behalf of Open Heart Magic</a>.
           </p>
         </div>
       </div>
-
-      <!-- Restructured Block 2 -->
       <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-3xl border border-slate-200/50 dark:border-slate-800/50 shadow-sm transition-all duration-300">
         <div class="w-full md:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 relative shrink-0 shadow-inner">
           <img 
-            src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=600&q=80" 
-            alt="Wide panoramic vista of mountains with runners moving along a trail path during golden hour" 
+            src="https://s3.amazonaws.com/hakuapps/prod/e9a511cc3ee75d428a1c48a0cb8e46da8ebe3aeb.JPG?1770162601" 
+            alt="Throwback photo of Manoaj doing cross country" 
             class="object-cover w-full h-full"
             loading="lazy"
           >
@@ -385,20 +354,14 @@
           </p>
         </div>
       </div>
-
     </section>
-
-    <!-- ✨ DYNAMIC COLLAPSIBLE ACCORDION PANELS FOR MARATHON PROFILES -->
     <section class="max-w-4xl mx-auto px-4 sm:px-6 pb-14">
       <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200/60 dark:border-slate-800/60 shadow-xl transition-all">
         <h3 class="text-2xl font-black text-slate-900 dark:text-white tracking-tight mb-6 flex items-center gap-2">
           <svg class="w-6 h-6 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
           Official Major Race Profiles
-        </h3>
-        
+        </h3>        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          
-          <!-- Chicago Accordion Container -->
           <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden transition-all duration-300">
             <button 
               onclick="toggleAccordion('chicago')" 
@@ -434,16 +397,11 @@
                   <a href="https://www.chicagomarathon.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 dark:text-emerald-400 font-bold hover:underline">chicagomarathon.com</a>
                 </div>
               </div>
-              
-              <!-- High-Fidelity Non-Stylized SVG Course Map of Chicago Marathon (True schematic loop tracing North, West & South Chicago streets starting/finishing at Grant Park) -->
               <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-xl border border-slate-100 dark:border-slate-800/80 flex flex-col items-center">
-                <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-3">Verified Course Loop Schematic</span>
+                <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-3">Stylized Course Loop Schematic</span>
                 <svg class="w-full max-w-[240px] h-44 text-red-500" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <!-- Lake Michigan Coastline (subtle reference grid) -->
                   <path d="M100,5 C100,30 95,50 92,70 C88,90 90,115 95,120" stroke="#93C5FD" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.4" fill="none"/>
                   <text x="102" y="50" class="fill-slate-400 dark:fill-slate-600 text-[6px]" stroke="none" transform="rotate(90 102 50)">Lake Michigan</text>
-
-                  <!-- Chicago Course Loop Path (Realistic tracing of north loop, west loop, south loop) -->
                   <path d="M 75,55 
                            L 75,35 
                            L 70,30 
@@ -464,19 +422,13 @@
                            L 69,65
                            L 75,65
                            Z" class="opacity-90 text-red-500 dark:text-red-400" fill="none"/>
-
-                  <!-- Start / Finish markers -->
                   <circle cx="75" cy="55" r="2.5" class="fill-red-600 dark:fill-red-500"/>
                   <text x="80" y="57" class="fill-slate-700 dark:fill-slate-300 font-black text-[7px]" stroke="none">Grant Park (Start/Finish)</text>
-                  
-                  <!-- Geographic labels on map -->
                   <text x="60" y="8" class="fill-slate-400 dark:fill-slate-500 text-[6px]" stroke="none">North Side (Lakeview)</text>
                   <text x="10" y="55" class="fill-slate-400 dark:fill-slate-500 text-[6px]" stroke="none">West Loop</text>
                   <text x="12" y="80" class="fill-slate-400 dark:fill-slate-500 text-[6px]" stroke="none">Pilsen</text>
                   <text x="70" y="112" class="fill-slate-400 dark:fill-slate-500 text-[6px]" stroke="none">South Side (Bronzeville)</text>
                 </svg>
-                
-                <!-- PDF View Button (Adheres to clean action guidelines) -->
                 <a 
                   href="https://assets-chicagomarathon-com.s3.amazonaws.com/wp-content/uploads/2025/08/25-BACM-COURSE-MAP-1.pdf" 
                   target="_blank" 
@@ -491,8 +443,6 @@
               </div>
             </div>
           </div>
-
-          <!-- NYC Accordion Container -->
           <div class="border border-slate-200/60 dark:border-slate-800 rounded-2xl overflow-hidden transition-all duration-300">
             <button 
               onclick="toggleAccordion('nyc')" 
@@ -528,16 +478,11 @@
                   <a href="https://www.nyrr.org/tcsnycmarathon" target="_blank" rel="noopener noreferrer" class="text-teal-600 dark:text-teal-400 font-bold hover:underline">nyrr.org</a>
                 </div>
               </div>
-              
-              <!-- High-Fidelity Non-Stylized SVG Course Map of NYC Marathon (True 5-Borough path starting at Verrazzano-Narrows, crossing Brooklyn, Queens, Queensboro Bridge, 1st Ave, Bronx, and finishing at Central Park) -->
               <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-xl border border-slate-100 dark:border-slate-800/80 flex flex-col items-center">
-                <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-3">Verified 5-Borough Course Route</span>
+                <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-3">Stylized 5-Borough Course Route</span>
                 <svg class="w-full max-w-[240px] h-44 text-blue-500" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <!-- East River/Hudson outline reference guides -->
                   <path d="M48,120 L48,65 C48,62 30,55 30,45" stroke="#93C5FD" stroke-width="0.75" opacity="0.4" fill="none"/>
                   <path d="M60,65 L55,42 L70,30 L85,32" stroke="#93C5FD" stroke-width="0.75" opacity="0.4" fill="none"/>
-
-                  <!-- Actual NYC Marathon Course Path -->
                   <path d="M 12,110 
                            L 22,98 
                            L 35,90
@@ -551,25 +496,17 @@
                            C 63,16 54,14 54,18
                            L 49,26
                            L 49,38" class="opacity-90 text-blue-500 dark:text-blue-400" fill="none"/>
-
-                  <!-- Start / Finish markers -->
                   <circle cx="12" cy="110" r="2.5" class="fill-blue-600 dark:fill-blue-500"/>
                   <circle cx="49" cy="38" r="2.5" class="fill-emerald-500"/>
                   <text x="5" y="117" class="fill-slate-700 dark:fill-slate-300 font-bold text-[6px]" stroke="none">Staten Island (Start)</text>
                   <text x="55" y="42" class="fill-slate-700 dark:fill-slate-300 font-black text-[6px]" stroke="none">Central Park Finish</text>
-                  
-                  <!-- Bridge markers -->
                   <line x1="16" y1="104" x2="18" y2="102" stroke="#E2E8F0" stroke-width="1.5" title="Verrazzano Bridge"/>
                   <line x1="50" y1="44" x2="45" y2="43" stroke="#E2E8F0" stroke-width="1.5" title="Queensboro Bridge"/>
-
-                  <!-- Borough / Bridge Labels -->
                   <text x="25" y="82" class="fill-slate-400 dark:fill-slate-500 text-[6px]" stroke="none">Brooklyn</text>
                   <text x="55" y="50" class="fill-slate-400 dark:fill-slate-500 text-[6px]" stroke="none">Queens</text>
                   <text x="22" y="32" class="fill-slate-400 dark:fill-slate-500 text-[6px]" stroke="none">Manhattan</text>
                   <text x="64" y="16" class="fill-slate-400 dark:fill-slate-500 text-[6px]" stroke="none">Bronx</text>
                 </svg>
-                
-                <!-- PDF View Button (Adheres to clean action guidelines) -->
                 <a 
                   href="https://webassets.nyrr.org/nyrrwebsiteassets/TCSNYCM25_Map_Course_102925_M3.pdf" 
                   target="_blank" 
@@ -588,13 +525,9 @@
         </div>
       </div>
     </section>
-
-    <!-- 5. DYNAMIC DONATION FEED SECTION WITH LOADING SKELETONS -->
     <section class="max-w-4xl mx-auto px-4 sm:px-6 pb-20">
       <div class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl dark:shadow-none relative overflow-hidden border border-slate-200/60 dark:border-slate-800/60 transition-all duration-300">
-        <!-- Accent glow inside light and dark modes -->
         <div class="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/5 dark:bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>
             <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2.5">
@@ -606,17 +539,12 @@
             </h3>
             <p class="text-sm text-slate-500 dark:text-slate-400 mt-1" id="feed-update-time">Synchronizing live donor roll...</p>
           </div>
-          
-          <!-- Sync Banner -->
           <div id="sync-badge" class="bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-xl text-xs font-semibold text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700/60 shrink-0 self-start sm:self-auto flex items-center gap-1.5 transition-all">
-            <svg class="w-3.5 h-3.5 animate-spin text-slate-400 dark:text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="sync-spinner"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.228 12H18"></path></svg>
+            <svg class="w-3.5 h-3.5 animate-spin text-slate-400 dark:text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="sync-spinner"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.228 12H18"></path></svg>
             <span id="sync-status-text">Fetching live feed</span>
           </div>
         </div>
-
-        <!-- Scrollable donation feed -->
         <div class="space-y-4 max-h-[380px] overflow-y-auto pr-2 custom-scrollbar" id="donations-feed">
-          <!-- Loading skeletons rendered here initially (Adapts perfectly to light and dark background states) -->
           <div class="animate-pulse space-y-4" id="feed-skeleton">
             <div class="flex items-center justify-between py-4 border-b border-slate-100 dark:border-slate-800">
               <div class="flex items-center gap-3.5 w-2/3">
@@ -650,8 +578,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Simulated dynamic info block -->
         <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
           <p>Donations made through HakuApp populate natively on page compile.</p>
           <a 
@@ -666,21 +592,14 @@
         </div>
       </div>
     </section>
-
   </main>
-
-  <!-- 6. ACCESSIBLE FOOTER -->
   <footer class="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 py-10 text-center transition-all duration-305">
     <div class="max-w-5xl mx-auto px-4 text-slate-500 dark:text-slate-400 space-y-3">
       <p class="text-sm font-semibold text-slate-850 dark:text-slate-200">Manoaj's Marathon Fundraising Campaign &copy; 2026</p>
       <p class="text-xs max-w-md mx-auto leading-relaxed">
         This static deployment acts as an informational bridge. All processed donations take place securely on the authorized and verified partner portal.
       </p>
-
-      <!-- ✨ PREMIUM RE-ENGINEERED ATHLETIC PROFILES (GUIDELINE ALIGNED) -->
       <div class="flex flex-wrap justify-center gap-3 pt-6 border-t border-slate-100 dark:border-slate-900 mt-6" aria-label="Athletic runner profile feeds">
-        
-        <!-- Strava (Orange Brand Standard) -->
         <a 
           href="https://strava.com/athletes/manoajk" 
           target="_blank" 
@@ -693,8 +612,6 @@
           </svg>
           <span>Follow on Strava</span>
         </a>
-
-        <!-- NYRR (Standard Sky Blue Profile) -->
         <a 
           href="https://results.nyrr.org/runner/53185879/races" 
           target="_blank" 
@@ -707,9 +624,7 @@
           </svg>
           <span>NYRR Results</span>
         </a>
-
-        <!-- NJ MileSplit (Active Emerald Track Profile) -->
-        <a 
+		<a 
           href="https://nj.milesplit.com/athletes/2231865-manoaj-kandiakounder" 
           target="_blank" 
           rel="noopener noreferrer" 
@@ -721,13 +636,9 @@
           </svg>
           <span>NJ MileSplit</span>
         </a>
-
       </div>
     </div>
   </footer>
-
-  <!-- 7. DRAWER / DIALOG -->
-  <!-- Re-engineered Center-Align Viewport Modal Framework to ensure no layout cutting-off -->
   <div 
     id="donation-modal" 
     class="fixed inset-0 z-50 invisible flex items-center justify-center p-4"
@@ -735,19 +646,15 @@
     aria-modal="true"
     aria-labelledby="modal-title"
   >
-    <!-- Optimized snappy transition speeds (150ms) -->
     <div 
       id="modal-backdrop"
       onclick="closeDonationModal()"
-      class="absolute inset-0 bg-slate-950/40 dark:bg-slate-950/60 backdrop-blur-sm opacity-0 transition-opacity duration-150 ease-out"
+      class="absolute inset-0 bg-slate-950/40 dark:bg-slate-950/60 backdrop-blur-sm opacity-0 transition-opacity duration-50 ease-out"
     ></div>
-
-    <!-- Center Card containing scroll container fallbacks for small viewports -->
     <div 
       id="modal-card"
-      class="relative w-full max-w-md bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 rounded-3xl p-6 shadow-2xl transition-all duration-150 ease-out transform scale-95 translate-y-4 opacity-0 max-h-[90vh] overflow-y-auto custom-scrollbar"
+      class="relative w-full max-w-md bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 rounded-3xl p-6 shadow-2xl transition-all duration-150 ease-out transform scale-95 translate-y-4 opacity-0 max-h-[92vh] overflow-y-auto custom-scrollbar"
     >
-      <!-- Close button -->
       <button 
         onclick="closeDonationModal()"
         class="absolute top-5 right-5 p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400"
@@ -757,20 +664,16 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
-
       <div class="space-y-4">
         <div class="w-12 h-12 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 rounded-2xl flex items-center justify-center">
           <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
         </div>
-        
         <div>
           <h4 id="modal-title" class="text-xl font-bold text-slate-900 dark:text-white tracking-tight">Support My Race Goal</h4>
           <p class="text-slate-600 dark:text-slate-400 text-sm mt-2 leading-relaxed">
             Thank you so much for your generosity! To guarantee complete security and programmatic tax receipts, all transactional actions take place directly on my verified, authorized <strong>HakuApp fundraising profile</strong>.
           </p>
         </div>
-
-        <!-- ✨ PREMIUM COMPANY MATCHING DONATION CALLOUT -->
         <div class="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-slate-950 dark:to-emerald-950/20 border border-emerald-100/60 dark:border-emerald-950 p-4 rounded-2xl flex items-start gap-3">
           <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -780,7 +683,6 @@
             I would love for your contribution to stretch as far as possible. Please look into options such as company donation matching policies—many employers offer a 1:1 match or even more generous programs!
           </div>
         </div>
-
         <div class="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800/80 p-4 rounded-2xl flex items-start gap-3">
           <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
@@ -789,7 +691,6 @@
             No banking credentials ever pass through this site. You are completely protected under official non-profit encryption rules.
           </div>
         </div>
-
         <div class="pt-2">
           <a 
             href="https://fundraisers.hakuapp.com/manoajk" 
@@ -809,8 +710,6 @@
       </div>
     </div>
   </div>
-
-  <!-- 8. CORE APPLICATION SCRIPT -->
   <script>
     // ----------------------------------------------------
     // ⚙️ GLOBAL APPLICATION CONFIGURATION (EASY TO CHANGE)
@@ -820,50 +719,19 @@
     // ----------------------------------------------------
     // INLINE FALLBACK DATASET WITH REAL TIMESTAMPS
     // ----------------------------------------------------
-    const MOCK_DB_LAST_UPDATED = new Date("2026-06-15T19:20:00Z").getTime();
+    const MOCK_DB_LAST_UPDATED = new Date("2026-07-16T19:52:00Z").getTime();
     
     const DONOR_DB = [
       { 
-        name: "Sarah Jenkins", 
-        amount: 150, 
-        message: "Go break your record, Manoaj! Rooting for you!", 
-        timestamp: new Date("2026-06-15T17:29:00Z").getTime() // 2 hours ago
-      },
-      { 
-        name: "Dr. Alistair Vance", 
-        amount: 500, 
-        message: "Incredible athletic discipline for an even better civic goal.", 
-        timestamp: new Date("2026-06-15T14:29:00Z").getTime() // 5 hours ago
-      },
-      { 
-        name: "The Perez Family", 
-        amount: 75, 
-        message: "Keep pacing strong!", 
-        timestamp: new Date("2026-06-14T19:29:00Z").getTime() // 1 day ago
-      },
-      { 
-        name: "Marcus Chen", 
-        amount: 100, 
-        message: "Honored to support this effort, run fast!", 
-        timestamp: new Date("2026-06-13T19:29:00Z").getTime() // 2 days ago
-      },
-      { 
-        name: "Anonymous", 
-        amount: 25, 
+        name: "Valli Karuppiah (via SRA)",
+        amount: 500,
         message: "", 
-        timestamp: new Date("2026-06-12T19:29:00Z").getTime() // 3 days ago
-      },
-      { 
-        name: "Nitin Kumar", 
-        amount: 250, 
-        message: "Inspirational work, Manoaj! See you at the finish line.", 
-        timestamp: new Date("2026-06-11T19:29:00Z").getTime() // 4 days ago
+        timestamp: new Date("2026-03-27T16:01:00Z").getTime()
       }
     ];
 
-    // Calculate human-readable relative time difference from timestamps
     function getRelativeTimeString(previousTimestamp) {
-      const current = new Date("2026-06-15T19:29:00Z").getTime(); // Synced standard clock runtime lock
+      const current = new Date().getTime(); // Synced standard clock runtime lock
       const elapsed = current - previousTimestamp;
 
       const msPerMinute = 60 * 1000;
@@ -891,9 +759,8 @@
         return `${years} year${years > 1 ? 's' : ''} ago`;
       }
     }
-
-    // Format ISO string / numeric timestamp to clear local time representation
-    function getFormattedLocalTime(timestamp) {
+    
+	function getFormattedLocalTime(timestamp) {
       const date = new Date(timestamp);
       return date.toLocaleDateString('en-US', {
         month: 'short',
@@ -1009,13 +876,13 @@
 
     function initDonationMetrics() {
       const totalRaised = DONOR_DB.reduce((acc, curr) => acc + curr.amount, 0);
-      const targetGoal = 5000;
+      const targetGoal = 2500;
       const progressPercent = Math.min((totalRaised / targetGoal) * 100, 100);
       const backerCount = DONOR_DB.length;
 
       document.getElementById("progress-raised-text").innerText = `$${totalRaised.toLocaleString()}`;
       document.getElementById("progress-percent-text").innerText = `${progressPercent.toFixed(1)}% Complete`;
-      document.getElementById("progress-backers-text").innerText = `${backerCount} donors backed`;
+      document.getElementById("progress-backers-text").innerText = `${backerCount} donor${backerCount != 1 ? 's' : ''} backed`;
       
       setTimeout(() => {
         document.getElementById("progress-bar").style.width = `${progressPercent}%`;
