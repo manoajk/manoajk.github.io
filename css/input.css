@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+    /* This replaces darkMode: 'class' (v4 sets class mode natively via variant) */
+    --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+    /* Overrides the default sans font family with your custom stack */
+    --font-sans: 'Inter', 'system-ui', '-apple-system', 'sans-serif';
+}
+
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     text-rendering: optimizeLegibility;
