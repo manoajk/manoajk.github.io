@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:css": "tailwindcss -i ./input.css -o ./css/output.css --watch",
+    "server": "python -m http.server 8000",
+    "dev": "concurrently \"pnpm build:css\" \"pnpm server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
