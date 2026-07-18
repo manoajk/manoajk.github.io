@@ -1,61 +1,6 @@
+import { DONOR_DB, MOCK_DB_LAST_UPDATED } from './donations.js';
+
 const SHOW_RUNNER_ANIMATION = false; // Toggle true/false to show/hide running avatar
-
-// ----------------------------------------------------
-// INLINE FALLBACK DATASET WITH REAL TIMESTAMPS
-// ----------------------------------------------------
-const MOCK_DB_LAST_UPDATED = "2026-07-17T14:32:00-04:00";
-
-const DONOR_DB = [
-    {
-        name: "Angelika Seaman",
-        amount: 15,
-        message: "better get to drinking that milk 🥛🥛",
-        timestamp: "2026-07-17T13:21:00-04:00",
-    },
-    {
-        name: "Shreya Kumar",
-        amount: 50,
-        timestamp: "2026-07-17T13:50:00-04:00",
-    },
-    {
-        name: "Felix Joseph",
-        amount: 25,
-        message: "Let’s go Manoaj!! Love the cause that you’re running for. Kids deserve the best Hospital Experience.",
-        timestamp: "2026-07-17T13:51:00-04:00",
-    },
-    {
-        name: "Kanishk Chinna",
-        amount: 5,
-        timestamp: "2026-07-17T13:52:00-04:00",
-    },
-    {
-        name: "Simran Gidwani",
-        amount: 25,
-        message: "Yayy so proud of you friend!! you are gonna kill it!",
-        timestamp: "2026-07-17T13:59:00-04:00",
-    },
-    {
-        name: "Geneve Lau",
-        amount: 25,
-        message: "FIND THE CAFE PANNA ALTERNATIVE IN CHICAGO",
-        timestamp: "2026-07-17T14:09:00-04:00",
-    },
-    {
-        name: "Ashwin Murali",
-        amount: 10,
-        timestamp: "2026-07-17T14:19:00-04:00",
-    },
-    {
-        name: "Nishil Shah",
-        amount: 35,
-        timestamp: "2026-07-17T14:25:00-04:00",
-    },
-    {
-        name: "Valli Karuppiah (via SRA)",
-        amount: 500,
-        // timestamp: "2026-03-27T12:01:00-04:00",
-    }
-];
 
 function getRelativeTimeString(previousTimestamp) {
     const current = new Date().getTime(); // Synced standard clock runtime lock
