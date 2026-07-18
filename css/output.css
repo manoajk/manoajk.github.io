@@ -1873,6 +1873,90 @@
     }
   }
 }
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgb(203 213 225);
+  border-radius: 3px;
+}
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgb(51 65 85);
+}
+.modal-open {
+  overflow: hidden;
+}
+.animate-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes run-body {
+  0%, 100% {
+    transform: translateY(0) rotate(12deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(14deg);
+  }
+}
+@keyframes arm-front {
+  0%, 100% {
+    transform: rotate(-35deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+}
+@keyframes arm-back {
+  0%, 100% {
+    transform: rotate(35deg);
+  }
+  50% {
+    transform: rotate(-40deg);
+  }
+}
+@keyframes leg-front {
+  0%, 100% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+}
+@keyframes leg-back {
+  0%, 100% {
+    transform: rotate(35deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+}
+.running-torso {
+  animation: run-body 0.38s infinite ease-in-out;
+  transform-origin: 12px 12px;
+}
+.running-arm-front {
+  transform-origin: 11px 8px;
+  animation: arm-front 0.38s infinite ease-in-out;
+}
+.running-arm-back {
+  transform-origin: 11px 8px;
+  animation: arm-back 0.38s infinite ease-in-out;
+}
+.running-leg-front {
+  transform-origin: 11px 13px;
+  animation: leg-front 0.38s infinite ease-in-out;
+}
+.running-leg-back {
+  transform-origin: 11px 13px;
+  animation: leg-back 0.38s infinite ease-in-out;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
