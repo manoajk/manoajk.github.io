@@ -3,62 +3,57 @@ const SHOW_RUNNER_ANIMATION = false; // Toggle true/false to show/hide running a
 // ----------------------------------------------------
 // INLINE FALLBACK DATASET WITH REAL TIMESTAMPS
 // ----------------------------------------------------
-const MOCK_DB_LAST_UPDATED = new Date("2026-07-17T18:32:00Z").getTime();
+const MOCK_DB_LAST_UPDATED = "2026-07-17T18:32:00Z";
 
 const DONOR_DB = [
     {
         name: "Angelika Seaman",
         amount: 15,
         message: "better get to drinking that milk 🥛🥛",
-        timestamp: new Date("2026-07-17T17:21:00Z").getTime()
+        timestamp: "2026-07-17T17:21:00Z",
     },
     {
         name: "Shreya Kumar",
         amount: 50,
-        message: "",
-        timestamp: new Date("2026-07-17T17:50:00Z").getTime()
+        timestamp: "2026-07-17T17:50:00Z",
     },
     {
         name: "Felix Joseph",
         amount: 25,
         message: "Let’s go Manoaj!! Love the cause that you’re running for. Kids deserve the best Hospital Experience.",
-        timestamp: new Date("2026-07-17T17:51:00Z").getTime()
+        timestamp: "2026-07-17T17:51:00Z",
     },
     {
         name: "Kanishk Chinna",
         amount: 5,
-        message: "",
-        timestamp: new Date("2026-07-17T17:52:00Z").getTime()
+        timestamp: "2026-07-17T17:52:00Z",
     },
     {
         name: "Simran Gidwani",
         amount: 25,
         message: "Yayy so proud of you friend!! you are gonna kill it!",
-        timestamp: new Date("2026-07-17T17:59:00Z").getTime()
+        timestamp: "2026-07-17T17:59:00Z",
     },
     {
         name: "Geneve Lau",
         amount: 25,
         message: "FIND THE CAFE PANNA ALTERNATIVE IN CHICAGO",
-        timestamp: new Date("2026-07-17T18:09:00Z").getTime()
+        timestamp: "2026-07-17T18:09:00Z",
     },
     {
         name: "Ashwin Murali",
         amount: 10,
-        message: "",
-        timestamp: new Date("2026-07-17T18:19:00Z").getTime()
+        timestamp: "2026-07-17T18:19:00Z",
     },
     {
         name: "Nishil Shah",
         amount: 35,
-        message: "",
-        timestamp: new Date("2026-07-17T18:25:00Z").getTime()
+        timestamp: "2026-07-17T18:25:00Z",
     },
     {
         name: "Valli Karuppiah (via SRA)",
         amount: 500,
-        // timestamp: new Date("2026-03-27T16:01:00Z").getTime(),
-        message: ""
+        // timestamp: "2026-03-27T16:01:00Z",
     }
 ];
 
@@ -200,7 +195,7 @@ async function syncDonationsData() {
         syncBadge.className = "bg-emerald-50 dark:bg-emerald-950/30 px-3.5 py-1.5 rounded-xl text-xs font-semibold text-emerald-700 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900/30 shrink-0 self-start sm:self-auto flex items-center gap-1.5";
         syncStatusText.innerText = "Verified Records";
 
-        feedUpdateTime.innerText = `Registry last updated: ${getFormattedLocalTime(MOCK_DB_LAST_UPDATED)}`;
+        feedUpdateTime.innerText = `Registry last updated: ${getFormattedLocalTime(new Date(MOCK_DB_LAST_UPDATED).getTime())}`;
 
         initDonationMetrics();
     }, 1000); // 1-second delay for premium animation pacing
@@ -242,7 +237,7 @@ function renderDonationFeed() {
         donationCard.className = "flex items-start justify-between gap-4 py-4 border-b border-slate-100 dark:border-slate-800 last:border-0 transition-colors duration-200";
 
         const initials = donation.name === "Anonymous" ? "?" : donation.name.split(" ").map(n => n[0]).join("").substring(0, 2).toUpperCase();
-        const calculatedRelativeTime = donation.timestamp ? getRelativeTimeString(donation.timestamp) : '';
+        const calculatedRelativeTime = donation.timestamp ? getRelativeTimeString(new Date(donation.timestamp).getTime()) : '';
 
         donationCard.innerHTML = `
           <div class="flex items-start gap-3.5">
