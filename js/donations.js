@@ -67,6 +67,18 @@ export const DONOR_DB = [
         message: "LETS GO MANOAJ! Can’t wait to see you absolutely crush both marathons!",
     },
     {
+        name: "Rebecca Zheng",
+        amount: 100,
+        timestamp: "2026-07-18T05:07:00-04:00",
+        message: "yay so exciting !!!!!",
+    },
+    {
+        name: "Amma and Appa",
+        amount: 501,
+        timestamp: "2026-07-18T10:21:00-04:00",
+        message: "Go Manoaj!! We are excited and proud of you 🎉!",
+    },
+    {
         name: "Valli Karuppiah (via SRA)",
         amount: 500,
         // timestamp: "2026-03-27T12:01:00-04:00",
