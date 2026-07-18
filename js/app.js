@@ -281,6 +281,18 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
+
+document.getElementById('theme-btn-light').addEventListener('click', () => { setThemeMode('light') });
+document.getElementById('theme-btn-system').addEventListener('click', () => { setThemeMode('system') });
+document.getElementById('theme-btn-dark').addEventListener('click', () => { setThemeMode('dark') });
+document.getElementById('donate-now').addEventListener('click', () => { openDonationModal() });
+document.getElementById('back-this-runner').addEventListener('click', () => { openDonationModal() });
+document.getElementById('modal-backdrop').addEventListener('click', () => { closeDonationModal() });
+document.getElementById('close-modal-dialog').addEventListener('click', () => { closeDonationModal() });
+document.getElementById('go-back-to-page').addEventListener('click', () => { closeDonationModal() });
+document.getElementById('toggle-chicago').addEventListener('click', () => { toggleAccordion('chicago') });
+document.getElementById('toggle-nyc').addEventListener('click', () => { toggleAccordion('nyc') });
+
 // Run setup sequences
 window.onload = function () {
     initThemeConfiguration();

@@ -62,8 +62,7 @@
             class="absolute top-0.5 bottom-0.5 rounded-full bg-white dark:bg-slate-800 shadow-sm transition-all duration-300 ease-out" 
             style="width: calc(33.333% - 2px); left: 2px;"
           ></div>
-          <button 
-            onclick="setThemeMode('light')" 
+          <button
             class="relative flex-1 py-1 flex items-center justify-center text-slate-400 hover:text-slate-800 dark:text-slate-500 dark:hover:text-slate-200 focus:outline-none transition-colors z-10" 
             id="theme-btn-light" 
             aria-label="Light mode"
@@ -72,8 +71,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"/>
             </svg>
           </button>
-          <button 
-            onclick="setThemeMode('system')" 
+          <button
             class="relative flex-1 py-1 flex items-center justify-center text-slate-400 hover:text-slate-800 dark:text-slate-500 dark:hover:text-slate-200 focus:outline-none transition-colors z-10" 
             id="theme-btn-system" 
             aria-label="System configuration mode"
@@ -82,8 +80,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
           </button>
-          <button 
-            onclick="setThemeMode('dark')" 
+          <button
             class="relative flex-1 py-1 flex items-center justify-center text-slate-400 hover:text-slate-800 dark:text-slate-500 dark:hover:text-slate-200 focus:outline-none transition-colors z-10" 
             id="theme-btn-dark" 
             aria-label="Dark mode"
@@ -94,8 +91,8 @@
           </button>
         </div>
 
-        <button 
-          onclick="openDonationModal()"
+        <button
+          id="donate-now"
           class="w-24 sm:w-auto bg-slate-900 dark:bg-slate-100 dark:text-slate-950 hover:bg-slate-850 dark:hover:bg-slate-200 text-white text-xs sm:text-sm font-semibold py-1.5 sm:py-2 px-3 sm:px-4 rounded-xl transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-950 dark:focus:ring-offset-slate-900"
         >
           Donate Now
@@ -232,8 +229,8 @@
           </div>
         </div>
       </div>
-      <button 
-        onclick="openDonationModal()"
+      <button
+        id="back-this-runner"
         class="group w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-10 py-5 rounded-2xl shadow-xl shadow-emerald-600/20 hover:shadow-emerald-600/30 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-3 focus:outline-none focus:ring-4 focus:ring-emerald-600/30"
       >
         <span>Back This Runner</span>
@@ -313,11 +310,11 @@
         </h3>        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden transition-all duration-300">
-            <button 
-              onclick="toggleAccordion('chicago')" 
+            <button
               class="w-full flex items-center justify-between p-5 bg-slate-50 dark:bg-slate-900/60 hover:bg-slate-100/60 dark:hover:bg-slate-800/40 text-left focus:outline-none transition-colors"
               aria-expanded="true"
               aria-controls="panel-chicago"
+              id="toggle-chicago"
             >
               <div class="flex items-center gap-2.5">
                 <span class="w-8 h-8 rounded-lg bg-red-500/10 text-red-500 flex items-center justify-center font-bold text-sm">CHI</span>
@@ -394,8 +391,8 @@
             </div>
           </div>
           <div class="border border-slate-200/60 dark:border-slate-800 rounded-2xl overflow-hidden transition-all duration-300">
-            <button 
-              onclick="toggleAccordion('nyc')" 
+            <button
+              id="toggle-nyc"
               class="w-full flex items-center justify-between p-5 bg-slate-50 dark:bg-slate-900/60 hover:bg-slate-100/60 dark:hover:bg-slate-800/40 text-left focus:outline-none transition-colors"
               aria-expanded="true"
               aria-controls="panel-nyc"
@@ -601,15 +598,14 @@
   >
     <div 
       id="modal-backdrop"
-      onclick="closeDonationModal()"
       class="absolute inset-0 bg-slate-950/40 dark:bg-slate-950/60 backdrop-blur-sm opacity-0 transition-opacity duration-150 ease-out"
     ></div>
     <div 
       id="modal-card"
       class="relative w-full max-w-md bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 rounded-3xl p-6 shadow-2xl transition-all duration-150 ease-out transform scale-95 translate-y-4 opacity-0 max-h-[92vh] overflow-y-auto custom-scrollbar"
     >
-      <button 
-        onclick="closeDonationModal()"
+      <button
+        id="close-modal-dialog"
         class="absolute top-5 right-5 p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400"
         aria-label="Close modal dialog"
       >
@@ -653,8 +649,8 @@
           >
             Continue to Official Site
           </a>
-          <button 
-            onclick="closeDonationModal()"
+          <button
+            id="go-back-to-page"
             class="w-full text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-semibold text-sm text-center py-3 mt-1.5 block hover:underline"
           >
             Go back to page
