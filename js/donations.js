@@ -5,6 +5,11 @@ export const MOCK_DB_LAST_UPDATED = "2026-07-18T01:54:00-04:00";
 
 export const DONOR_DB = [
     {
+        name: "Valli Karuppiah (via SRA)",
+        amount: 500,
+        timestamp: "2026-03-27T12:01:00-04:00",
+    },
+    {
         name: "Angelika Seaman",
         amount: 15,
         message: "better get to drinking that milk 🥛🥛",
@@ -79,8 +84,9 @@ export const DONOR_DB = [
         message: "Go Manoaj!! We are excited and proud of you 🎉!",
     },
     {
-        name: "Valli Karuppiah (via SRA)",
-        amount: 500,
-        // timestamp: "2026-03-27T12:01:00-04:00",
+        name: "Rajiv Nair",
+        amount: 50,
+        timestamp: "2026-07-19T08:15:00-04:00",
+        message: "Vamooooosss!!!",
     },
 ];
